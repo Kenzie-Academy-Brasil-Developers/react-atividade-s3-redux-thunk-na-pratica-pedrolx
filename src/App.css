@@ -1,0 +1,105 @@
+@keyframes bounce {
+  0% {
+    transform: scale(0.95);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(255, 255, 255);
+}
+
+.App div {
+  margin-top: 5rem;
+}
+
+.button {
+  width: 300px;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background-color: aquamarine;
+}
+
+.button button {
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+
+  background-color: rgb(68, 231, 177);
+
+  color: white;
+  font-weight: 600;
+
+  height: 2.5rem;
+}
+
+.button button:hover {
+  cursor: pointer;
+
+  animation: bounce linear .5s;
+}
+
+.button input {
+  height: 2rem;
+  border-radius: 5px;
+}
+
+.button input:hover {
+  animation: bounce linear .5s;
+}
+
+.button input:focus {
+  outline: none;
+
+  border: 2px solid rgb(0, 167, 167);
+  border-radius: 10px;
+}
+
+.results {
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+
+  border-radius: 10px;
+
+  background-color: aquamarine;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:  space-evenly;
+
+  padding: 1rem;
+}
+
+.results p {
+  height: 2.5rem;
+  width: 90%;
+
+  background-color: white;
+  color: black;
+
+  padding: 5px;
+
+  border-radius: 10px;
+}
